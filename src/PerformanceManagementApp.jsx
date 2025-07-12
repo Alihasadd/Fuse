@@ -104,7 +104,7 @@ const PerformanceManagementApp = () => {
   };
 
   const generateRandomQuestion = () => {
-    const randomIndex = Math.floor(Math.random() * questions.length);
+    const randomIndex = Math.floor(Math.random() * questions.length);"What, if anything, is stressing you out right now?" 
     setCurrentQuestion(questions[randomIndex]);
   };
 
@@ -173,7 +173,7 @@ const PerformanceManagementApp = () => {
       <div className="container mx-auto px-4 py-8 max-w-4xl">
         {/* Header */}
         <div className="flex justify-between items-center mb-8">
-          <h1 className="text-3xl font-bold">Performance Management 1:1</h1>
+          <h1 className="text-3xl font-bold">Fuse 1:1</h1>
           <button
             onClick={() => setDarkMode(!darkMode)}
             className={`p-2 rounded-lg ${cardClass} border hover:opacity-80 transition-opacity`}
@@ -194,7 +194,7 @@ const PerformanceManagementApp = () => {
                 <textarea
                   value={managerNotes}
                   onChange={(e) => setManagerNotes(e.target.value)}
-                  placeholder="Add your notes here (aim for 2 sentences)"
+                  placeholder="Add your notes here (2 sentences)"
                   className={`w-full h-20 p-3 border rounded-lg ${inputClass} resize-none`}
                 />
               </div>
@@ -205,8 +205,8 @@ const PerformanceManagementApp = () => {
                 <textarea
                   value={employeeNotes}
                   onChange={(e) => setEmployeeNotes(e.target.value)}
-                  placeholder="Add your notes here (aim for 3 sentences)"
-                  className={`w-full h-24 p-3 border rounded-lg ${inputClass} resize-none`}
+                  placeholder="Add your notes here (2 sentences)"
+                  className={`w-full h-20 p-3 border rounded-lg ${inputClass} resize-none`}
                 />
               </div>
             </div>
